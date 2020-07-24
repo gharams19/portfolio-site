@@ -436,15 +436,61 @@ footer p {
     font-size: 12px;
   }
   .Projects{
-    width: 100%;
+    width: 50%;
+  }
+  #ProjectImg {
+    height: 290px;
   }
   #gallery {
     margin-left: 0px;
+  }
+  #ProjectsTitle {
+    font-size: 25px;
+  }
+  #ProjectsSubtitle{
+    font-size:15px;
+    margin-bottom: 50px;
   }
   #page4_sub{
     font-size: 30px;
   }
   #emailBtn {
     font-size: 15px;
+  }
+  #nav {
+    justify-content:center;
+    padding-left: 0px;
+    width: 100%;
+  }
+  #nav a {
+    font-size: 12px;
+  }
+  #page2 {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+  #page4 {
+    padding-top: 80px;
+  }
+  #overlay_container {
+    margin-top: 0px;
+  }
+  .overlay_content {
+    margin-top: 100px;
+    width: 70%;
+  }
+  #closeOverlay {
+    right: 10%;
+  }
+  footer {
+    padding-bottom: 30px;
+  }
+  .middle {
+    background-color: #000034;
+    height: 290px;
+    width:100%;
+  }
+  #page1 {
+    height: 710px;
   }
 }
