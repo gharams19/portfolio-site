@@ -23,13 +23,15 @@ class App extends Component {
       var left = el.offsetLeft;
       var width = el.offsetWidth;
       var height = el.offsetHeight;
-
+      var bottom = top + height;
+      var viewPoint_bottom = window.pageYOffset
       while (el.offsetParent) {
         el = el.offsetParent;
         top += el.offsetTop;
         left += el.offsetLeft;
       }
 
+      
       return (
         top < window.pageYOffset + window.innerHeight &&
         left < window.pageXOffset + window.innerWidth &&
@@ -37,16 +39,16 @@ class App extends Component {
         left + width > window.pageXOffset
       );
     }
-    function checkAnimations(elements, animationName) {
-      for (var i = 0; i < elements.length; i++) {
-        if (elementInViewport(elements[i])) {
-          elements[i].classList.add(animationName);
-        } else if (elements[i].classList.contains(animationName)) {
+    function checkAnimations(element, animationName) {
+        if (elementInViewport(element)) {
+          element.classList.add(animationName);
+        } else if (element.classList.contains(animationName)) {
           return;
         } else {
-          elements[i].classList.remove(animationName);
+          element.classList.remove(animationName);
         }
-      }
+      
+      
     }
     window.onscroll = function () {
       Scrolled();
@@ -55,7 +57,7 @@ class App extends Component {
     var sticky = nav.offsetTop;
     var elements1 = document.getElementsByClassName("animation_slide_left");
     var elements2 = document.getElementsByClassName("animation_scale");
-    var elements3 = document.getElementsByClassName("animation_slide_bottom");
+    var elements3 = document.getElementsByClassName("Projects");
 
     function Scrolled() {
       if (window.pageYOffset >= sticky) {
@@ -63,11 +65,15 @@ class App extends Component {
       } else {
         nav.classList.remove("sticky");
       }
-      checkAnimations(elements1, "slide-in-left");
-      checkAnimations(elements2, "scale-in-center");
+        for (var i = 0; i < elements1.length; i++) {
+        checkAnimations(elements1[i], "slide-in-left");
+      }
+      for (var i = 0; i < elements2.length; i++) {
+        checkAnimations(elements2[i], "scale-in-center");
+      }
       for (var i = 0; i < elements3.length; i++) {
         var animationName = "slide-in-bottom" + i;
-        checkAnimations(elements3, animationName);
+        checkAnimations(elements3[i], animationName);
       }
     }
     var btnContainer = document.getElementById("filtersContainer");
@@ -494,7 +500,7 @@ class App extends Component {
             </a>
           </div>
           <footer>
-            <a href="#page1">^</a>
+            <a href="#page1"></a>
             <div id="mediaLinks">
               <a href="https://github.com/gharams19" target="blank">
                 <FontAwesomeIcon id="mediaLink" icon={faGithub} />

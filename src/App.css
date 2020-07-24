@@ -79,7 +79,11 @@ a{
 
   
 }
-#page2,#page3{
+#page2 {
+  padding: 153px 0px 153px 0px;
+}
+
+#page3{
   padding-top: 100px;
   padding-bottom: 100px;
 }
@@ -115,14 +119,14 @@ a{
   width: 300px;
   height: 300px;
   padding: 15px;
-  border-radius: 3px 3px 3px 3px;
+  border-radius: 400px;
   animation: ease-in;
   animation-duration: 2s;
+  border: solid 1px white;
 }
 #personal_pic {
   text-align: right;
-  border-radius: 2px 2px 2px 2px;
-  
+  border-radius:  2px 2px 2px;
 }
 #page2_text {
   text-align: center;
@@ -198,7 +202,7 @@ a{
 .Projects {
   display: flex;
   object-fit: contain;
-  width: 450px;
+  width: 420px;
   justify-content: center;
 
   display: none;
@@ -222,6 +226,9 @@ a{
   
 }
 
+#ProjectImg:hover {
+  opacity:0;
+}
 
 .middle {
   transition: .5s ease;
@@ -232,7 +239,7 @@ a{
   text-align: center;
   padding-top: 60px;
 }
-.Projects:hover #ProjectImg {
+.Projects:hover .ProjectImg {
   opacity: 0;
 }
 
@@ -368,7 +375,7 @@ footer p {
   font-weight: normal;
   margin-top: 50px;
 }
-.slide-in-left{animation:slide-in-left 1.5s cubic-bezier(.25,.46,.45,.94) both}
+.slide-in-left{animation:slide-in-left 1s cubic-bezier(.25,.46,.45,.94) both}
 @keyframes slide-in-left{0%{transform:translateX(-1000px);opacity:0}100%{transform:translateX(0);opacity:1}}
 .first_img {
   width: 100%;
