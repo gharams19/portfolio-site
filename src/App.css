@@ -166,6 +166,12 @@ a{
   margin-left: 250px;
   font-size: 18px;
 }
+#skillsTitle {
+  color: #cb0065;
+  font-weight: bold;
+  margin-left: 250px;
+  font-size: 18px;
+}
 #skills_container {
   display: flex;
   flex-direction: column;
@@ -391,3 +397,54 @@ footer p {
 .slide-in-bottom4{animation:slide-in-bottom 2s cubic-bezier(.25,.46,.45,.94) both}
 
 @keyframes slide-in-bottom{0%{transform:translateY(1000px);opacity:0}100%{transform:translateY(0);opacity:1}}
+
+@media only screen and (max-width: 600px) {
+  #page1_text {
+    font-size: 30px;
+  }
+  #buttonTo2nd {
+    font-size: 15px;
+  }
+  #title {
+    font-size: 35px;
+  }
+  #page2_content {
+    flex-direction: column-reverse;
+    justify-content: center;
+    text-align: center;
+  }
+  #page2_text {
+    font-size: 12px;
+    padding-top: 30px;
+  }
+  #picture{
+    width: 190px;
+    height: 190px;
+  
+  }
+  #personal_pic {
+    text-align: center;
+    margin-top: 20px;
+  }
+  #skills, #skillsTitle {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 20px;
+    font-size: 15px;
+  }
+  .btn {
+    font-size: 12px;
+  }
+  .Projects{
+    width: 100%;
+  }
+  #gallery {
+    margin-left: 0px;
+  }
+  #page4_sub{
+    font-size: 30px;
+  }
+  #emailBtn {
+    font-size: 15px;
+  }
+}

@@ -23,8 +23,6 @@ class App extends Component {
       var left = el.offsetLeft;
       var width = el.offsetWidth;
       var height = el.offsetHeight;
-      var bottom = top + height;
-      var viewPoint_bottom = window.pageYOffset
       while (el.offsetParent) {
         el = el.offsetParent;
         top += el.offsetTop;
@@ -68,10 +66,10 @@ class App extends Component {
         for (var i = 0; i < elements1.length; i++) {
         checkAnimations(elements1[i], "slide-in-left");
       }
-      for (var i = 0; i < elements2.length; i++) {
+      for (i = 0; i < elements2.length; i++) {
         checkAnimations(elements2[i], "scale-in-center");
       }
-      for (var i = 0; i < elements3.length; i++) {
+      for (i = 0; i < elements3.length; i++) {
         var animationName = "slide-in-bottom" + i;
         checkAnimations(elements3[i], animationName);
       }
@@ -100,7 +98,10 @@ class App extends Component {
       if (c === "all") {
         c = "";
         gallery.style.justifyContent = "initial";
-        gallery.style.margin = "0px 0px 0px 400px";
+        if(window.screen.width > 600) {
+          gallery.style.margin = "0px 0px 0px 400px";
+
+        } 
       } else {
         gallery.style.justifyContent = "center";
         gallery.style.margin = "0px 0px 0px 0px";
@@ -183,14 +184,8 @@ class App extends Component {
               </div>
             </p>
           </div>
-          <p
-            style={{
-              color: "#cb0065",
-              fontWeight: "bold",
-              marginLeft: "250px",
-              fontSize: "18px",
-            }}
-            className="animation_slide_left"
+          <p  className="animation_slide_left" id = "skillsTitle"
+           
           >
             Here are a few technologies I have been working with:
           </p>
