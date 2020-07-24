@@ -122,9 +122,16 @@ a{
   border-radius: 400px;
   animation: ease-in;
   animation-duration: 2s;
-  border: solid 1px white;
+  border: ridge 1px white;
+  opacity: 0.5;
 }
-#personal_pic {
+#picture:hover {
+  opacity: 1;
+  animation: ease-in;
+  animation-duration: 2s;
+}
+
+#pesonal_pic {
   text-align: right;
   border-radius:  2px 2px 2px;
 }
@@ -163,13 +170,13 @@ a{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
-  margin-left: 250px;
+  margin-left: 100px;
   font-size: 18px;
 }
 #skillsTitle {
   color: #cb0065;
   font-weight: bold;
-  margin-left: 250px;
+  margin-left: 100px;
   font-size: 18px;
 }
 #skills_container {
@@ -344,7 +351,7 @@ a{
   padding: 10px 10px 10px 10px;
   border-radius: 2px;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 #emailBtn:hover {

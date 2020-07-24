@@ -99,7 +99,7 @@ class App extends Component {
         c = "";
         gallery.style.justifyContent = "initial";
         if(window.screen.width > 600) {
-          gallery.style.margin = "0px 0px 0px 400px";
+          gallery.style.margin = "0px 0px 0px 300px";
 
         } 
       } else {
