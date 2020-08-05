@@ -495,7 +495,6 @@ class App extends Component {
             </a>
           </div>
           <footer>
-            <a href="#page1"></a>
             <div id="mediaLinks">
               <a href="https://github.com/gharams19" target="blank">
                 <FontAwesomeIcon id="mediaLink" icon={faGithub} />
