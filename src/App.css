@@ -231,6 +231,7 @@ a{
   flex-direction: row;
 }
 #ProjectImg {
+  object-fit: fill;
   height: 400px;
     opacity: 1;
     display: flex;
