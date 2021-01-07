@@ -124,6 +124,7 @@ a{
   animation-duration: 2s;
   border: ridge 1px white;
   opacity: 0.5;
+  object-fit:contain;
 }
 #picture:hover {
   opacity: 1;
@@ -443,11 +444,15 @@ footer p {
   .btn {
     font-size: 12px;
   }
-  .Projects{
-    width: 50%;
+  
+  .Projects {
+    width: 100%;
   }
   #ProjectImg {
-    height: 290px;
+    height: 100%;
+    object-fit: fill;
+    margin-bottom: 100px;
+  
   }
   #gallery {
     margin-left: 0px;
