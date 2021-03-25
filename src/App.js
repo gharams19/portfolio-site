@@ -14,6 +14,7 @@ import html1 from "../src/ResturantTinder.png";
 import html2 from "../src/DailyPostcard.png";
 import unity1 from "../src/TacoMan.png";
 import python1 from "../src/AI3.jpeg";
+import ios1 from "../src/PopMatch.png"
 import other1 from "../src/tdm.png";
 
 class App extends Component {
@@ -151,7 +152,7 @@ class App extends Component {
         <section id="page1">
           <p id="page1_text">
             Hello, I'm <span style={{ color: "#ff1a8c" }}>Gharam Alsaedi</span>
-            <div>I'm a web and game developer.</div>
+            <div>I'm a developer.</div>
             <a href="#page2" id="buttonTo2nd">
               View work
             </a>
@@ -179,8 +180,11 @@ class App extends Component {
                 University of California, Davis.
               </a>
               <div>
-                I enjoy both crafting an idea into a video game, and building
-                innovative websites.
+                I mostly enjoy crafting an idea into a video game, and building
+                innovative websites. 
+              </div>
+              <div>
+                I also like exploring different branches in Software Engineering including mobile development. 
               </div>
             </p>
           </div>
@@ -213,6 +217,7 @@ class App extends Component {
                 SQL{" "}
               </p>
             </div>
+            
             <div id="skills_container">
               {" "}
               <p>
@@ -235,6 +240,30 @@ class App extends Component {
                   style={{ color: "#cb0065" }}
                 />{" "}
                 Python{" "}
+              </p>
+            </div>
+            <div id="skills_container">
+              {" "}
+              <p>
+                <FontAwesomeIcon
+                  icon={faCaretRight}
+                  style={{ color: "#cb0065" }}
+                />{" "}
+                Swift
+              </p>
+              <p>
+                <FontAwesomeIcon
+                  icon={faCaretRight}
+                  style={{ color: "#cb0065" }}
+                />{" "}
+                Cocoapods{" "}
+              </p>
+              <p>
+                <FontAwesomeIcon
+                  icon={faCaretRight}
+                  style={{ color: "#cb0065" }}
+                />{" "}
+                Firebase{" "}
               </p>
             </div>
           </div>
@@ -370,6 +399,30 @@ class App extends Component {
                   />
                 </a>
               </div>
+              <div className="overlay_content 5">
+                <div id="closeOverlay" onClick={() => close("5")}>
+                  <FontAwesomeIcon icon={faTimes} />
+                </div>
+                <p style={{ color: "#cb0065", fontSize: "30px" }}>
+                  PopMatch
+                </p>
+                <p>
+                  PopMatch is a video chatting app that allows users to have 1 on 1 meetings with new people and like minded thinkers. It's a way to create
+                  social bonds and network for university students. <br></br><br></br>PopMatch aims to mitigate 
+                  the lack of social interaction as a result of the pandemic and having everything go virtual. 
+      
+                </p>
+                <a
+                  href="https://github.com/gharams19/PopMatch"
+                  target="blank"
+                >
+                  <FontAwesomeIcon
+                    id="mediaLink"
+                    style={{ fontSize: "40px", marginTop: "60px" }}
+                    icon={faGithub}
+                  />
+                </a>
+              </div>
             </div>
           </div>
 
@@ -384,16 +437,16 @@ class App extends Component {
               All
             </button>
             <button className="btn" onClick={() => filterSelection("Html")}>
-              HTML/JavaScript
+              Web Applications
             </button>
             <button className="btn" onClick={() => filterSelection("Unity")}>
-              Unity
+              Games
             </button>
             <button className="btn" onClick={() => filterSelection("Python")}>
-              Python
+              AI Programs
             </button>
             <button className="btn" onClick={() => filterSelection("Other")}>
-              Other
+              IOS Applications
             </button>
           </div>
 
@@ -446,7 +499,7 @@ class App extends Component {
                 </btn>
               </div>
             </div>
-            <div className="Projects Other">
+            <div className="Projects Unity">
               <img
                 id="ProjectImg"
                 className="ProjectImg"
@@ -474,6 +527,22 @@ class App extends Component {
                 <p id="ProjectsTitle">Oska Player AI</p>
                 <p id="ProjectsSubtitle">Python</p>
                 <btn id="descriptionBtn" onClick={() => on("4")}>
+                  Learn more
+                </btn>
+              </div>
+            </div>
+            <div className="Projects Others">
+              <img
+                id="ProjectImg"
+                className="ProjectImg"
+                src={ios1}
+                alt=""
+                style={{ width: "100%" }}
+              ></img>
+              <div className="middle">
+                <p id="ProjectsTitle">PopMatch</p>
+                <p id="ProjectsSubtitle">IOS/Swift</p>
+                <btn id="descriptionBtn" onClick={() => on("5")}>
                   Learn more
                 </btn>
               </div>

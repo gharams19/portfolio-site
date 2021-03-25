@@ -245,6 +245,7 @@ a{
   opacity:0;
 }
 
+
 .middle {
   transition: .5s ease;
   opacity: 0;
@@ -254,7 +255,7 @@ a{
   text-align: center;
   padding-top: 60px;
 }
-.Projects:hover .ProjectImg {
+.Projects:hover #ProjectImg {
   opacity: 0;
 }
 
