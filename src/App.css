@@ -405,6 +405,7 @@ footer p {
 .slide-in-bottom2{animation:slide-in-bottom 1.6s cubic-bezier(.25,.46,.45,.94) both}
 .slide-in-bottom3{animation:slide-in-bottom 1.8s cubic-bezier(.25,.46,.45,.94) both}
 .slide-in-bottom4{animation:slide-in-bottom 2s cubic-bezier(.25,.46,.45,.94) both}
+.slide-in-bottom5{animation:slide-in-bottom 2.4s cubic-bezier(.25,.46,.45,.94) both}
 
 @keyframes slide-in-bottom{0%{transform:translateY(1000px);opacity:0}100%{transform:translateY(0);opacity:1}}
 
