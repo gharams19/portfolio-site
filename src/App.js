@@ -175,10 +175,10 @@ class App extends Component {
               <img id="picture" src={picture} alt="<>"></img>
             </div>
             <p id="page2_text" className="animation_slide_left">
-              I'm currently a Computer Science student at{" "}
-              <a href="https://www.ucdavis.edu" target="blank">
-                University of California, Davis.
-              </a>
+            I'm currently a Software Engineer at {" "}
+                <a href = "https://www.activisionblizzardmedia.com/" target = "blank">
+                  Activision Blizzard Media.
+                </a>    
               <div>
                 I mostly enjoy crafting an idea into a video game, and building
                 innovative websites. 
@@ -200,32 +200,7 @@ class App extends Component {
                   icon={faCaretRight}
                   style={{ color: "#cb0065" }}
                 />{" "}
-                HTML & CSS{" "}
-              </p>
-              <p>
-                <FontAwesomeIcon
-                  icon={faCaretRight}
-                  style={{ color: "#cb0065" }}
-                />{" "}
-                JavaScript{" "}
-              </p>
-              <p>
-                <FontAwesomeIcon
-                  icon={faCaretRight}
-                  style={{ color: "#cb0065" }}
-                />{" "}
-                SQL{" "}
-              </p>
-            </div>
-            
-            <div id="skills_container">
-              {" "}
-              <p>
-                <FontAwesomeIcon
-                  icon={faCaretRight}
-                  style={{ color: "#cb0065" }}
-                />{" "}
-                Unity
+                C/C++{" "}
               </p>
               <p>
                 <FontAwesomeIcon
@@ -239,7 +214,32 @@ class App extends Component {
                   icon={faCaretRight}
                   style={{ color: "#cb0065" }}
                 />{" "}
+                Unity{" "}
+              </p>
+            </div>
+            
+            <div id="skills_container">
+              {" "}
+              <p>
+                <FontAwesomeIcon
+                  icon={faCaretRight}
+                  style={{ color: "#cb0065" }}
+                />{" "}
+                JavaScript
+              </p>
+              <p>
+                <FontAwesomeIcon
+                  icon={faCaretRight}
+                  style={{ color: "#cb0065" }}
+                />{" "}
                 Python{" "}
+              </p>
+              <p>
+                <FontAwesomeIcon
+                  icon={faCaretRight}
+                  style={{ color: "#cb0065" }}
+                />{" "}
+                SQL{" "}
               </p>
             </div>
             <div id="skills_container">
